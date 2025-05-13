@@ -1,0 +1,7 @@
+<h1>Dashboard</h1>
+<p>Bem-vindo, <%= user.name %>! Seu papel é: <%= user.role %>
+</p>
+<% if (user.role==='admin' ) { %>
+    <a href="/manage-users">Gerenciar Usuários</a><br>
+    <% } %>
+        <a href="/logout">Sair</a>
